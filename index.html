@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erjon Gjoka — Developer &amp; DevOps</title>
+<meta name="description" content="Erjon Gjoka — Full-stack &amp; DevOps developer. Ndërtoj aplikacione Android, web dhe infrastrukturë cloud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#top" class="logo">EG<span class="dot">.</span></a>
+    <nav class="nav">
+      <a href="#about">Rreth meje</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projekte</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <a href="#projects" class="btn btn-ghost nav-cta">Shiko punën</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot status-live"></span> disponibël për projekte</p>
+      <h1>Erjon Gjoka</h1>
+      <p class="role">Full-stack &amp; DevOps Developer</p>
+      <p class="hero-desc">
+        Ndërtoj produkte nga zero — nga app-e native Android me Kotlin &amp; Jetpack Compose,
+        te web-e moderne me React dhe TypeScript — dhe i vendos vetë në prodhim, mbi infrastrukturë
+        Supabase dhe Cloudflare.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Shiko projektet</a>
+        <a href="#contact" class="btn btn-ghost">Më kontakto</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="portrait-frame">
+        <img src="assets/hero.jpg" alt="Erjon Gjoka" class="portrait">
+      </div>
+
+      <div class="terminal" id="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="terminal-title">deploy.sh — erjon@mango</span>
+        </div>
+        <pre class="terminal-body" id="terminal-body"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about wrap">
+    <div class="about-photo">
+      <img src="assets/about.jpg" alt="Erjon Gjoka jashtë ambientit të punës">
+    </div>
+    <div class="about-copy">
+      <p class="section-label">01 · Rreth meje</p>
+      <h2>Nga ideja në App Store, pa ndalesa.</h2>
+      <p>
+        Jam zhvillues i pavarur, i fokusuar te ndërtimi i produkteve të plota — jo vetëm kod, por
+        edhe infrastrukturë, baza të dhënash dhe deployment. Aktualisht po punoj në
+        <strong>Mango Match</strong>, një aplikacion dating për Android, me backend Supabase
+        (autentikim, real-time chat, RLS policies) dhe një version web paralel.
+      </p>
+      <p>
+        Më pëlqen të mësoj duke ndërtuar — çdo projekt është edhe një mundësi për t'u thelluar
+        në arkitekturë, debugging dhe optimizim real, jo vetëm teori.
+      </p>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-num">2</span>
+          <span class="fact-label">codebases të koordinuara<br>(Android + Web)</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">1</span>
+          <span class="fact-label">backend i përbashkët<br>Supabase</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">3</span>
+          <span class="fact-label">projekte live<br>në Cloudflare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="stack wrap">
+    <p class="section-label">02 · Stack</p>
+    <h2>Mjetet me të cilat punoj</h2>
+    <div class="stack-grid">
+      <div class="stack-chip">Kotlin</div>
+      <div class="stack-chip">Jetpack Compose</div>
+      <div class="stack-chip">React</div>
+      <div class="stack-chip">TypeScript</div>
+      <div class="stack-chip">Vite</div>
+      <div class="stack-chip">Tailwind CSS</div>
+      <div class="stack-chip">Supabase</div>
+      <div class="stack-chip">PostgreSQL</div>
+      <div class="stack-chip">Cloudflare Pages</div>
+      <div class="stack-chip">Git &amp; GitHub</div>
+      <div class="stack-chip">Android Studio</div>
+      <div class="stack-chip">Netlify</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects wrap">
+    <p class="section-label">03 · Projekte</p>
+    <h2>Live në Cloudflare</h2>
+    <p class="section-sub">Tre projekte të vendosura si Cloudflare Pages — kliko për t'i vizituar direkt.</p>
+
+    <div class="project-grid">
+
+      <a class="project-card" href="https://gold-studio.pages.dev/" target="_blank" rel="noopener">
+        <div class="project-top">
+          <span class="status-dot status-live"></span>
+          <span class="project-status">live</span>
+        </div>
+        <h3>Gold Studio</h3>
+        <p class="project-url">gold-studio.pages.dev</p>
+        <p class="project-desc">Projekt web i vendosur mbi Cloudflare Pages.</p>
+        <span class="project-link">Vizito projektin →</span>
+      </a>
+
+      <a class="project-card" href="https://mango-match-web.pages.dev/" target="_blank" rel="noopener">
+        <div class="project-top">
+          <span class="status-dot status-live"></span>
+          <span class="project-status">live</span>
+        </div>
+        <h3>Mango Match — Web</h3>
+        <p class="project-url">mango-match-web.pages.dev</p>
+        <p class="project-desc">Versioni web i aplikacionit dating Mango Match, i lidhur me të njëjtin backend Supabase si versioni Android.</p>
+        <span class="project-link">Vizito projektin →</span>
+      </a>
+
+      <a class="project-card" href="https://bipo-messenger.pages.dev/" target="_blank" rel="noopener">
+        <div class="project-top">
+          <span class="status-dot status-live"></span>
+          <span class="project-status">live</span>
+        </div>
+        <h3>Bipo Messenger</h3>
+        <p class="project-url">bipo-messenger.pages.dev</p>
+        <p class="project-desc">Aplikacion mesazhesh, i vendosur mbi Cloudflare Pages.</p>
+        <span class="project-link">Vizito projektin →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact wrap">
+    <p class="section-label">04 · Kontakt</p>
+    <h2>Le të ndërtojmë diçka.</h2>
+    <p class="section-sub">Hap për bashkëpunime, projekte freelance apo thjesht një bisedë teknike.</p>
+    <div class="contact-links">
+      <a href="mailto:you@example.com" class="btn btn-primary">you@example.com</a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+    </div>
+    <p class="edit-hint">✏️ Zëvendëso email-in dhe linkun e GitHub më sipër me të dhënat e tua reale në index.html.</p>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>© <span id="year"></span> Erjon Gjoka. Ndërtuar me kod, kafe dhe shumë deploy-e.</p>
+</footer>
+
+<!-- LEO — AI assistant widget -->
+<div id="leo-widget">
+  <button id="leo-toggle" aria-label="Hap asistentin Leo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 3C7.03 3 3 6.58 3 11c0 2.36 1.15 4.48 3 5.94V21l3.6-1.98c.77.17 1.58.26 2.4.26 4.97 0 9-3.58 9-8s-4.03-8-9-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <circle cx="8.5" cy="11" r="1" fill="currentColor"/>
+      <circle cx="12" cy="11" r="1" fill="currentColor"/>
+      <circle cx="15.5" cy="11" r="1" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <div id="leo-panel" class="hidden">
+    <div class="leo-header">
+      <div class="leo-title">
+        <span class="status-dot status-live"></span>
+        <div>
+          <strong>Leo</strong>
+          <div class="leo-sub">Asistent AI · falas</div>
+        </div>
+      </div>
+      <button id="leo-close" aria-label="Mbyll">✕</button>
+    </div>
+    <div id="leo-messages"></div>
+    <form id="leo-form">
+      <input id="leo-input" type="text" placeholder="Pyet Leo diçka..." autocomplete="off">
+      <button type="submit" aria-label="Dërgo">→</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://js.puter.com/v2/"></script>
+<script src="script.js"></script>
+</body>
+</html>
